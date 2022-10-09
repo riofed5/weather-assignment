@@ -9,7 +9,7 @@ const API_KEY = process.env.REACT_APP_API_KEY;
 const getLocation = async (nameOfCity) => {
   try {
     const text = nameOfCity.toLowerCase();
-    const url = `http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${API_KEY}&q=${text}`;
+    const url = `https://dataservice.accuweather.com/locations/v1/cities/search?apikey=${API_KEY}&q=${text}`;
     const reqLocation = await fetch(url);
     const locationObj = await reqLocation.json();
     const locationKey = locationObj[0].Key;
@@ -21,7 +21,7 @@ const getLocation = async (nameOfCity) => {
 
 const getWeather = async (locationKey) => {
   try {
-    const url = `http://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey}?apikey=${API_KEY}`;
+    const url = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey}?apikey=${API_KEY}`;
     const weatherReq = await fetch(url);
     const weatherObj = await weatherReq.json();
     const dailyForecast = weatherObj.DailyForecasts[0];
