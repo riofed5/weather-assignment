@@ -14,16 +14,40 @@ const onInputUpdate = (event, cb) => {
 };
 
 const iconWeather = {
-  Sunny:
-    "https://apidev.accuweather.com/developers/Media/Default/WeatherIcons/01-s.png",
-  "Mostly Sunny":
-    "https://apidev.accuweather.com/developers/Media/Default/WeatherIcons/02-s.png",
-  "Partly Sunny":
-    "https://apidev.accuweather.com/developers/Media/Default/WeatherIcons/03-s.png",
-  "Intermittent Clouds":
-    "https://apidev.accuweather.com/developers/Media/Default/WeatherIcons/04-s.png",
-  "Hazy Sunshine":
-    "https://apidev.accuweather.com/developers/Media/Default/WeatherIcons/05-s.png",
+  "Sunny": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/01-s.png",
+  "Mostly Sunny": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/02-s.png",
+  "Partly Sunny": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/03-s.png",
+  "Intermittent Clouds": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/36-s.png",
+  "Hazy Sunshine": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/05-s.png",
+  "Mostly Cloudy": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/38-s.png",
+  "Cloudy": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/07-s.png",
+  "Dreary (Overcast)": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/08-s.png",
+  "Fog": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/11-s.png",
+  "Showers": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/12-s.png",
+  "Mostly Cloudy w/ Showers": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/40-s.png",
+  "Partly Sunny w/ Showers": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/14-s.png",
+  "T-Storms": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/15-s.png",
+  "Mostly Cloudy w/ T-Storms": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/42-s.png",
+  "Partly Sunny w/ T-Storms": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/17-s.png",
+  "Rain": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/18-s.png",
+  "Flurries": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/19-s.png",
+  "Mostly Cloudy w/ Flurries": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/43-s.png",
+  "Partly Sunny w/ Flurries": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/21-s.png",
+  "Snow": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/22-s.png",
+  "Mostly Cloudy w/ Snow": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/44-s.png",
+  "Ice": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/24-s.png",
+  "Sleet": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/25-s.png",
+  "Freezing Rain": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/26-s.png",
+  "Rain and Snow": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/29-s.png",
+  "Hot": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/30-s.png",
+  "Cold": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/31-s.png",
+  "Windy": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/32-s.png",
+  "Clear": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/33-s.png",
+  "Mostly Clear": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/34-s.png",
+  "Partly Cloudy": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/35-s.png",
+  "Hazy Moonlight": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/37-s.png",
+  "Partly Cloudy w/ Showers": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/39-s.png",
+  "Partly Cloudy w/ T-Storms": "https://apidev.accuweather.com//developers/Media/Default/WeatherIcons/41-s.png"
 };
 
 console.log(iconWeather["Partly Sunny"]);
