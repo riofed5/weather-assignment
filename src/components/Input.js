@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { getCoordintes } from "../helper/utility";
-let message = "";
 
 const Input = ({
   onInputHandlerChange,
@@ -12,6 +11,16 @@ const Input = ({
   const inputRef = useRef(null);
   const [currentCity, setCurrentCity] = useState("");
 
+  const handleKeyDown = (event) => {
+    const str = inputRef.current.value;
+    // Check if the input value is NOT empty string
+    if (typeof str === "string" && str.length !== 0) {
+      if (event.key === "Enter") {
+        updateWeatherHandler();
+      }
+    }
+  };
+
   useEffect(() => {
     if (currentCity !== "") {
       inputRef.current.value = currentCity;
@@ -21,6 +30,7 @@ const Input = ({
   const handleSelectCurrentLocation = async () => {
     getCoordintes(changeHandler, setCurrentCity);
   };
+
   return (
     <div>
       <h2 className="w3-text-blue">Weather Forecast</h2>
@@ -38,6 +48,9 @@ const Input = ({
                 onInputHandlerChange(event);
               }}
               type="text"
+              onKeyDown={(e) => {
+                handleKeyDown(e);
+              }}
             />
             <button
               style={{

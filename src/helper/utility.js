@@ -58,7 +58,7 @@ export const getCity = async (coordinates) => {
 
   try {
     const req = await fetch(
-      "https://us1.locationiq.com/v1/reverse.php?key=pk.b002b005e82e6fe5c45cba9c6ac8b5f8&lat=" +
+      `https://us1.locationiq.com/v1/reverse.php?key=${process.env.REACT_APP_LOCATION_API_KEY}&lat=` +
         lat +
         "&lon=" +
         lng +
